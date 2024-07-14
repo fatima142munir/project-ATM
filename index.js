@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let balance = 10000;
 let pinNum = 9966;
@@ -27,7 +28,6 @@ if (enterPin.inputPin === pinNum) {
             console.log(`Amount withdraw ${enterAmount.inputAmount} only`);
             let remainBalance = balance - enterAmount.inputAmount;
             console.log(`Your Remaining Balance is ${remainBalance}`);
-            // balance = balance - enterAmount.inputAmount
         }
         else {
             console.log("Insufficient Balance");
